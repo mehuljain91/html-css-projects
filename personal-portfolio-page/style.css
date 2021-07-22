@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+}
+
+nav ul a {
+    display: block;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 23px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Welcome Section */
+#welcome-section {
+    margin: 0;
+    width: 100%;
+    height: 92vh;
+    background: rgb(5, 66, 66);
+    text-align: center;
+    border: none;
+    outline: rgb(5, 66, 66) solid 10px;
+}
+
+section h1 {
+    font-size: 50px;
+    color: white;
+    padding: 250px 0 10px 0;
+}
+section p {
+    padding: 0;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 27px;
+    color: white;
+}
+/* Projects Section */
+#projects {
+    margin-top: -21px;
+    width: 100%;
+    background: #eee;
+    border: none;
+    outline: #eee solid 10px;
+}
+
+#projects h1 {
+    text-align: center;
+    padding: 30px;
+    color: rgb(77, 62, 62);
+}
+
+.flex-1, .flex-2 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content {
+    flex: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 90px 70px 90px;
+    padding: 10px;
+}
+
+img {
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-title {
+    background: rgb(5, 78, 75);
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    margin: 0;
+    padding: 7px 0;
+}
+
+.btn {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(5, 66, 66);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contact {
+    margin: 0;
+    background: rgb(71, 2, 80);
+    color: white;
+    border-bottom: 30px solid rgb(71, 2, 80);
+    outline: rgb(71, 2, 80) solid 10px;
+}
+.connect {
+    text-align: center;
+}
+.connect h2 {
+    padding: 70px 20px 20px 20px;
+    font-size: 40px;
+    font-weight: 3000;
+    word-spacing: 20px;
+}
+
+#desc {
+    font-size: 29px;
+    margin-bottom: 80px;
+    word-spacing: 10px;
+}
+
+#profiles {
+    text-align: center;
+    margin: 0;
+}
+
+.profile-link {
+    color: white;
+    text-decoration: none;
+    margin: 100px 80px 120px 80px;
+    padding: 0px 10px 0 10px;
+    font-size: 29px;
+}
+
+.profile-link:hover {
+    font-size: 32px;
+}
+
+hr {
+    border: 2px solid rgb(5, 78, 75);
+    margin-top: 70px;
+}
+
+#footer {
+    font-size: 26px;
+}
+
+/* Media query */
+
+@media (max-width: 1100px) {
+    .flex-1, .flex-2 {
+        flex-direction: column;
+    }
+    .content {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li a {
+        margin: 0 10px 0 6px;
+        padding: 23px 7px;
+    }
+
+}
