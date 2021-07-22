@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: rgb(240, 238, 238);
+    font-family: Serif;
+}
+
+#header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#description {
+    font-size: 22px;
+}
+
+.blogpost {
+    margin: 20px 20px 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 7px;
+}
+
+.header-img {
+    width: 100%;
+    height: 300px;
+}
+
+.blog-title {
+    margin: 0;
+}
+
+.about-blog {
+    font-weight: 200;
+}
+
+.read-more {
+    background: #1f7a1f;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 6px;
+    display: block;
+}
+button {
+    margin: auto;
+    cursor: pointer;
+}
+
+#popular-post,
+#who-am-i,
+#topics {
+    margin: 20px 20px 50px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1px 7px 10px 7px;
+}
+
+
+#popular-post h2,
+#topics h2,
+#who-am-i h2 {
+    background: #666699;
+    padding: 8px;
+    color: white;
+}
+.small-img {
+    max-width: 100%;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+#topics-container p:hover {
+    background: rgb(182, 174, 174);
+    cursor: pointer;
+}
+
+#topics-container p {
+    padding: 13px;
+    margin: 0;
+    border-top: 1px solid black;
+}
+
+#about-me {
+    line-height: 1.5;
+    padding: 8px;
+}
+
+#footer {
+    left: 0;
+    width: 100%;
+    background-color: #595959;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+
+/* Media Query */
+
+@media (min-width: 900px) {
+    .blogpost {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    #popular-post {
+        margin-top: -1165px;
+        width: 30%;
+        float: right;
+        margin-right: 70px;
+    }
+
+    .post-container {
+        padding: 4px;
+    }
+
+    #topics {
+        margin-top: -580px;
+        width: 30%;
+        float: right;
+        margin-right: 70px;
+    }
+
+    #who-am-i {
+        float: right;
+        width: 30%;
+        margin-right: 70px;
+        margin-top: -1746px;
+    }
+}
