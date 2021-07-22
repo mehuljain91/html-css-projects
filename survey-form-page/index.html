@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header id="header"> 
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to make this platform better</p>
+    </header>
+
+    <form id="survey-form">
+        <div id="personal">
+            <label for="name" id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Enter your name" required><br><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input id="email" type="email" placeholder="Enter your email" required><br><br>
+
+            <label for="number" id="number-label">Age(optional)</label><br>
+            <input id="number" type="number" min="10" max="99" placeholder="Enter your age">
+        </div>
+
+        <label for="current-role"><p style="width: 90%;">Which option best describes your current role?</p></label>
+        <select name="current-role" id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time learner</option>
+            <option value="no">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <div id="radio-group">
+            <p style="width: 90%;">Would you recommend our services to a friend?</p>
+
+            <label class="radio-container">Definitely
+                <input type="radio" id="user-recommend" name="user-recommend" value="Definitely" checked="checked">
+                <span class="radio-button"></span>
+            </label>
+            <label class="radio-container">May be
+                <input type="radio" id="user-recommend" name="user-recommend" value="May be">
+                <span class="radio-button"></span>
+            </label>
+            <label class="radio-container">Not sure
+                <input type="radio" id="user-recommend" name="user-recommend" value="Not sure">
+                <span class="radio-button"></span>
+            </label>
+        </div>
+
+        <div id="checkbox-group">
+            <p style="width: 90%;">What you would like to see improved in our platform?(Check all that apply)</p>
+
+            <label class="check-container">Front-end Development
+                <input type="checkbox" id="check1" name="check1" value="Front-end Development">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Back-end Development
+                <input type="checkbox" id="check2" name="check2" value="Back-end Development">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">DS Algorithm
+                <input type="checkbox" id="check3" name="check3" value="DS Algorithm">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Data Visualization
+                <input type="checkbox" id="check4" name="check4" value="Data Visualization">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Challenges
+                <input type="checkbox" id="check5" name="check5" value="Challenges">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Community
+                <input type="checkbox" id="check6" name="check6" value="Community">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Projects
+                <input type="checkbox" id="check7" name="check7" value="Projects">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Forum
+                <input type="checkbox" id="check8" name="check8" value="Forum">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">Additional Courses
+                <input type="checkbox" id="check9" name="check9" value="Additional Courses">
+                <span class="checkmark"></span>
+            </label>
+        </div><br>
+
+        <div id="comment">
+            <label for="suggestion" style="width: 90%;">Any comments or suggestions?</label><br>
+            <textarea id="suggestion" name="suggestion" placeholder="Enter your comments here"></textarea>
+        </div><br>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
