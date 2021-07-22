@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+                        
+body::before {
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+        120deg, rgb(248, 166, 166), rgb(125, 125, 206), rgb(235, 181, 81), wheat
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header {
+    text-align: center;
+}
+
+#description {
+    font-weight: 500;
+    font-size: large;
+}
+
+#survey-form {
+    background: rgba(58, 238, 58, 0.548);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+button[type=submit], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Check container */
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+
+.check-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+.check-container .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+/* radio container */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.radio-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.radio-container input:checked ~ .radio-button {
+    background-color: #2196F3;
+}
+.radio-button:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio-container input:checked ~ .radio-button:after {
+    display: block;
+}
+.radio-container .radio-button:after {
+    top: 5px;
+   left: 5px;
+   bottom: 6px;
+   right: 4px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}
+
+#suggestion {
+    width: 90%;
+    height: 100px;
+    margin: 8px 0;
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 16px;
+}
+
+#name-label {
+    padding-top: 20px;
+    width: 90%;
+}
+#email-label {
+    width: 90%;
+}
+#number-label {
+    width: 90%;
+}
+
+/* Submit button */
+#submit {
+    background: rgb(88, 88, 209);
+    font-weight: 400;
+    color: white;
+}
+#submit:hover {
+    background: rgb(68, 68, 156);
+    cursor: pointer;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    #survey-form {
+        width: 100%;
+    }
+}
